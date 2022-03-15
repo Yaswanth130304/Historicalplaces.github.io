@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Historical Places In India</title>
+        <style>
+            .A{grid-area: header;}
+            .B{grid-area: menu;}
+            .C{grid-area: contact;}
+            .D{grid-area: about;}
+            .E{grid-area: info;}
+            .F{grid-area: tea;}
+            .G{grid-area: eat;}
+            .H{grid-area: ate;}
+
+            .container{
+                display: grid;
+                grid-template-areas: 
+                'header header header header header header header header'
+                'menu menu menu menu contact contact contact contact'
+                'about about about about info info info info'
+                'tea tea tea tea eat eat eat eat'
+                'ate ate ate ate';
+                width: 50%;
+                padding: 20px;
+                background-color: rgba(50, 205, 50, 0.986);
+                border-radius: 20px;
+                border:5px solid brown;
+                box-shadow: 4px 4px 4px black;
+                
+            }
+            .container>div{
+                background-image: linear-gradient(135px, rgb(68, 9, 231), rgb(230, 238, 238));
+                padding: 20px;
+                margin: auto;
+                border-radius: 30px;
+                color: black;
+                font-size: x-large;
+                font-weight: bolder;
+                font-style: italic;
+                
+            }
+           h1{
+               color: rgb(250, 248, 248);
+               background-color: rgb(255, 0, 34);
+               border-radius: 40px;
+               padding: 20px;
+            } 
+           body{
+               background-image: url(o.webp);
+               background-repeat: no-repeat;
+               background-attachment: fixed;
+               backface-visibility: visible;
+               background-size: cover;
+            }
+            .buttons {
+                display: grid;
+                border-bottom: 5px solid white;
+                border-left: 5px solid white;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            .buttons > div {
+                border-top: 5px solid white;
+                border-right: 1px solid white;
+            }
+
+            .button {
+                border: 5px solid white;
+                line-height: 100px;
+                text-align: center;
+                font-size: x-large;
+                cursor: pointer;
+                color: rgb(70, 240, 18);
+                font-weight: bolder;
+                background-color: rgba(48, 45, 243, 0.993);
+                border-radius: 30px;
+            }
+
+            #equal {
+                background-color: rgb(85, 85, 255);
+                color: white;
+            }
+
+            .button:hover {
+                background-color: rgba(241, 13, 13, 0.993);
+                color: white;
+                transition: 0.5s ease-in-out;
+            }
+            a{
+                text-decoration: none;
+            }
+            .info{
+                text-align: center;
+                font-weight: bolder;
+                font-size: x-large;
+                border-radius: 30px;
+                border: 6px solid crimson;
+                background-color: rgba(255, 251, 0, 0.568);
+                color: black;
+                padding-top: 10px;
+                padding-bottom: 10x;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Some Historical Places In India</h1>
+            <br>
+            <div class="container">
+                <div class="image">
+                    <div class="A">Taj-Mahal<hr><img src="h.webp"></div>
+                    <br>
+                    <div class="B">Red Fort<hr><img src="t.webp"></div>
+                    <br>
+                    <div class="C">Qutub Minar<hr><img src="y.webp"></div>
+                    <div class="D">Golden Temple<hr><img src="g.webp"></div>
+                    <div class="E">Humayun’s Tomb<hr><img src="q.webp"></div>
+                    <div class="F">Hawa Mahal<hr><img src="w.webp"></div>
+                    <div class="G">Agra Fort<hr><img src="th.webp"></div>
+                    <div class="H">Jallianwala Bagh<hr><img src="j.webp"></div>
+                </div>
+            </div>
+        </div>
+            <br><br>
+        <div class="buttons">
+            <div class="info">Contact Us At</div>
+            <a href="https://www.linkedin.com/"><div class="button">Linkedin</div></a>
+            <a href="https://github.com/"><div class="button">Github</div></a>
+            <div class="button">Facebook</div>
+            <a href="https://discord.com/channels/@me"><div class="button">Discord</div></a>
+        </div>
+    </body>
+</html>
